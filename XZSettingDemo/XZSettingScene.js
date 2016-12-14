@@ -65,6 +65,8 @@ class XZSettingScene extends Component {
 
   _renderSeparator(sectionID, rowID, adjacentRowHighlighted){
 
+    console.log('fsdfs')
+
   	return(
   		<View 
   		style={{height:1,backgroundColor:'rgb(243,243,243)'}}

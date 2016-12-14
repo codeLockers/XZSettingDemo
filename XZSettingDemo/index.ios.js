@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -21,9 +15,12 @@ export default class XZSettingDemo extends Component {
 
   _renderNavigationBar(){
 
-    var routeMapper ={
+    var routeMapper={
       RightButton(route,navigator,index,navState){},
       LeftButton(route,navigator,index,navState){
+
+        console.log('fsfds')
+
         return(
           <Image 
           style={{width:11.5,height:21,marginLeft:10,marginTop:(40-21)/2}}
@@ -77,6 +74,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+})
 
 AppRegistry.registerComponent('XZSettingDemo', () => XZSettingDemo);
